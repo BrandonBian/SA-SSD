@@ -1,6 +1,6 @@
-## My Debuged Version of SA-SSD
+## My Debugged Version of SA-SSD
 
-Here is my **debuged version** of the [SA-SSD](https://github.com/skyhehe123/SA-SSD) model. I greatly referenced [this CSDN blog](https://blog.csdn.net/qq_38316300/article/details/110161110) to debug the model, and successfully set up the environment for training. Note that there are some paths that you may need to change in certain files.
+Here is my **debugged version** of the [SA-SSD](https://github.com/skyhehe123/SA-SSD) model. I greatly referenced [this CSDN blog](https://blog.csdn.net/qq_38316300/article/details/110161110) to debug the model and successfully set up the environment for training. Note that there are some paths that you may need to change in certain files.
 
 ### Required environment (I followed this precisely):
 
@@ -42,7 +42,7 @@ FYI, I included some useful files that are essential to the training of SA-SSD.
 
 2. I included the ImageSet file in the directory, which specifies the training and validation set of the SA-SSD.
 
-Hopefully this debuged repository of SA-SSD will be of help.
+Hopefully, this debugged repository of SA-SSD will be of help.
 
 ### Bugs fixed:
 
