@@ -44,6 +44,15 @@ FYI, I included some useful files that are essential to the training of SA-SSD.
 
 Hopefully this debuged repository of SA-SSD will be of help.
 
+### Bugs fixed:
+
+1. ModuleNotFoundError: No module named 'mmcv._ext'
+2. Cannot find kitti_dbinfos_train.pkl
+3. RuntimeError: Expected object of backend CUDA but got backend CPU for sequence element 1 in sequence argument at position
+4. TypeError: grid_sample() got an unexpected keyword argument 'align_corners'
+5. Many other bugs related to spconv
+
+
 ---
 
 ## SA-SSD: Structure Aware Single-stage 3D Object Detection from Point Cloud (CVPR 2020) [\[paper\]](https://www4.comp.polyu.edu.hk/~cslzhang/paper/SA-SSD.pdf)
