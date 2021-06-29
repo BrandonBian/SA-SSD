@@ -1,6 +1,48 @@
-Here
+## My Debuged Version of SA-SSD
 
-Reference: [This CSDN blog](https://blog.csdn.net/qq_38316300/article/details/110161110).
+Here is my **debuged version** of the [SA-SSD](https://github.com/skyhehe123/SA-SSD) model. I greatly referenced [this CSDN blog](https://blog.csdn.net/qq_38316300/article/details/110161110) to debug the model, and successfully set up the environment for training. Note that there are some paths that you may need to change in certain files.
+
+### Required environment (I followed this precisely):
+
+```
+ubuntu 18.04 (cannot be newer version)
+
+cuda 10.0
+
+cudnn 7.6.4
+
+python 3.6.2 (use anaconda)
+
+pytorch 1.1.0 (use anaconda)
+
+torchvision 0.3.0 (use anaconda)
+```
+
+### Required packages:
+
+```
+ pip install shapely
+ pip install opencv (maybe it should be opencv-python)
+ pip install scikit-image
+ pip install mayavi
+ pip install numba
+ pip install matplotlib
+ pip install Cython
+ pip install terminaltables
+ pip install tqdm
+ pip install pybind11 
+
+```
+
+### Supplementary files for training:
+
+FYI, I included some useful files that are essential to the training of SA-SSD.
+
+1. PKL files for training: [here](https://drive.google.com/drive/folders/1_bNBcKVOpBdupAE_yVBbncb8NLVrkAiU?usp=sharing). This should be produced after running the create_data.py (which takes some time). You can just download it here if you want to skip the create_data process.
+
+2. I included the ImageSet file in the directory, which specifies the training and validation set of the SA-SSD.
+
+Hopefully this debuged repository of SA-SSD will be of help.
 
 ---
 
