@@ -52,6 +52,9 @@ Hopefully, this debugged repository of SA-SSD will be of help.
 4. TypeError: grid_sample() got an unexpected keyword argument 'align_corners'
 5. Many other bugs related to spconv
 
+### Demo screenshot of trainning
+
+![screenshot](screenshot.png)
 
 ---
 
