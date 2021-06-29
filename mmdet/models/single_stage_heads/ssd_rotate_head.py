@@ -358,12 +358,12 @@ class SSDRotateHead(nn.Module):
 
             if self._use_direction_classifier:
                 dir_labels = dir_labels[selected]
-                opp_labels = (box_preds[..., -1] > 0) ^ dir_labels.bool()
+                opp_labels = (box_preds[..., -1] > 0) ^ dir_labels.byte()
                 box_preds[opp_labels, -1] += np.pi
 
             # add ground-truth
             if gt_boxes is not None:
-                box_preds = torch.cat([gt_boxes, box_preds],0)
+                top_labels=top_labels.to(gt_lbls.device)
                 top_labels = torch.cat([gt_lbls, top_labels],0)
 
             anchor_labels.append(top_labels)
@@ -411,7 +411,7 @@ def bilinear_interpolate_torch_gridsample(image, samples_x, samples_y):
     samples[:, :, :, 1] = (samples[:, :, :, 1] / (H - 1))  # normalize to between  0 and 1
     samples = samples * 2 - 1  # normalize to between -1 and 1
 
-    return torch.nn.functional.grid_sample(image, samples, align_corners=True)
+    return torch.nn.functional.grid_sample(image, samples)
 
 class PSWarpHead(nn.Module):
     def __init__(self, grid_offsets, featmap_stride, in_channels, num_class=1, num_parts=49):
