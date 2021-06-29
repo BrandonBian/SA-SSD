@@ -81,7 +81,7 @@ test_cfg = dict(
 )
 # dataset settings
 dataset_type = 'KittiLiDAR'
-data_root = '/home/billyhe/hdd/KITTI/'
+data_root = '/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 data = dict(
@@ -103,7 +103,7 @@ data = dict(
         augmentor=dict(
             type='PointAugmentor',
             root_path=data_root,
-            info_path=data_root + 'kitti_dbinfos_train.pkl',
+            info_path=data_root + 'kitti_dbinfos_trainval.pkl',
             sample_classes=['Car'],#, 'Pedestrian', 'Cyclist'],
             min_num_points=[5],# 5, 5],
             sample_max_num=[15],# 10, 10],
