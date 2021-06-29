@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 import pathlib
 import pickle
 import numpy as np
@@ -271,9 +273,9 @@ def create_groundtruth_database(data_path,
 
 
 if __name__ == '__main__':
-    create_kitti_info_file('/home/billyhe/data/KITTI')
-    create_reduced_point_cloud('/home/billyhe/data/KITTI')
+    create_kitti_info_file('/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI')
+    create_reduced_point_cloud('/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI')
 
-    create_groundtruth_database(data_path='/home/billyhe/data/KITTI', \
-                                info_path='/home/billyhe/data/KITTI/kitti_infos_trainval.pkl', \
-                                db_info_save_path='/home/billyhe/data/KITTI/kitti_dbinfos_trainval.pkl')
+    create_groundtruth_database(data_path='/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI', \
+                                info_path='/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI/kitti_infos_trainval.pkl', \
+                                db_info_save_path='/media/brandon/BSJ/Brandon/Research/Project 3 - CalTrans/CalTrans Project/KITTI/kitti_dbinfos_trainval.pkl')
