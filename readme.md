@@ -1,5 +1,7 @@
 Here
 
+Reference: [This CSDN blog](https://blog.csdn.net/qq_38316300/article/details/110161110).
+
 ---
 
 ## SA-SSD: Structure Aware Single-stage 3D Object Detection from Point Cloud (CVPR 2020) [\[paper\]](https://www4.comp.polyu.edu.hk/~cslzhang/paper/SA-SSD.pdf)
