@@ -44,7 +44,7 @@ FYI, I included some useful files that are essential to the training of SA-SSD.
 
 3. I have trained the SA-SSD with car-classfication's configuration file for 12 epochs, and have uploaded the weights (pkl file). You can dowload it from [here](https://drive.google.com/file/d/1qTlYLasaLSkAbjKNkE_Qg-JNMwN6OxCI/view?usp=sharing).
 
-4. I have also trained the SA-SSD with multi-class-classification's configuration file for XX epochs,
+4. I have also trained the SA-SSD with multi-class-classification's configuration file for 6 epochs, and have uploaded the weights (pkl file). You can dowload it from [here](https://drive.google.com/file/d/1G2CRRR32d3Jwq9U4SCO96dculCAt3yWi/view?usp=sharing)
 
 Hopefully, this debugged repository of SA-SSD will be of help.
 
