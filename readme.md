@@ -42,6 +42,8 @@ FYI, I included some useful files that are essential to the training of SA-SSD.
 
 2. I included the ImageSet file in the directory, which specifies the training and validation set of the SA-SSD.
 
+3. I have trained the SA-SSD for XX epochs, and have uploaded the weights (pkl file). You can dowload it from here.
+
 Hopefully, this debugged repository of SA-SSD will be of help.
 
 ### Bugs fixed:
@@ -52,9 +54,25 @@ Hopefully, this debugged repository of SA-SSD will be of help.
 4. TypeError: grid_sample() got an unexpected keyword argument 'align_corners'
 5. Many other bugs related to spconv
 
-### Demo screenshot of trainning
+### Demo screenshot of trainning:
 
 ![screenshot](screenshot.png)
+
+### Links to download the relevant KITTI dataset:
+
+```
+# Images
+!wget https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip
+
+# Velodyne
+!wget  https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip
+
+# Calibration
+!wget  https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip
+
+# Labels
+!wget  https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip
+```
 
 ---
 
