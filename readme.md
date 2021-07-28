@@ -24,14 +24,14 @@ torchvision 0.3.0 (use anaconda)
  pip install shapely
  pip install opencv (maybe it should be opencv-python)
  pip install scikit-image
- pip install mayavi
+ pip install mayavi (not sure if this is necessary)
  pip install numba
  pip install matplotlib
  pip install Cython
  pip install terminaltables
  pip install tqdm
  pip install pybind11 
-
+ pip install pycocotools
 ```
 
 ### Supplementary files for training:
