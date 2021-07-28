@@ -46,6 +46,12 @@ FYI, I included some useful files that are essential to the training of SA-SSD.
 
 4. I have also trained the SA-SSD with multi-class-classification's configuration file for 6 epochs, and have uploaded the weights (pkl file). You can dowload it from [here](https://drive.google.com/file/d/1G2CRRR32d3Jwq9U4SCO96dculCAt3yWi/view?usp=sharing).
 
+5. If you installed all environment exactly as listed above, you can directly install **spconv** using the wheel that I provided:
+
+```
+sudo ./spconv-1.1-cp36-cp36m-linux_x86_64.whl
+```
+
 Hopefully, this debugged repository of SA-SSD will be of help.
 
 ### Bugs fixed:
